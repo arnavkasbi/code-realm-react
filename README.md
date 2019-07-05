@@ -29,6 +29,19 @@ Please note -
 * SCSS integration is already present so you don't have to add any custom packages or modify any configuration changes for it.
 * The ability to execute unit tests is already baked in so you don't have to make any configuration changes to enable it.
 
+## Quick Start
+
+1. Make sure that you have Node.js and npm v5 or above installed.
+
+2. Clone this repo using git clone https://github.com/PiyushJha04/code-realm-exercise.git
+
+3. Move to the appropriate directory: cd code-realm-react.
+
+4. Run `yarn` in order to install dependencies.
+
+5. At this point you can run `npm start` to see the example app at http://localhost:3000.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
