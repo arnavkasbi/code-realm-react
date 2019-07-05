@@ -33,7 +33,7 @@ Please note -
 
 1. Make sure that you have Node.js and npm v5 or above installed.
 
-2. Clone this repo using git clone https://github.com/PiyushJha04/code-realm-exercise.git
+2. Clone this repo using git clone https://github.com/PiyushJha04/code-realm-react.git
 
 3. Move to the appropriate directory: cd code-realm-react.
 
