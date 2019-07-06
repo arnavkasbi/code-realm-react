@@ -8,12 +8,14 @@ class App extends React.Component {
     super(props)
     this.state = {
       formTitle: 'Enquiry Form',
-      formlist: [{name:"test"}]
+      formlist: []
     }
   }
 
   submitForm = (obj) => {
-   this.setState({formlist: Object.assign({},...this.state.formlist,{obj})});
+    let tmp = {...this.state.formlist};
+    tmp.push(obj);
+   this.setState({formlist: tmp});
   }
 
 

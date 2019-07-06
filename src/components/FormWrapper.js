@@ -33,7 +33,7 @@ class FormButton extends React.Component {
   render() {
     return (<React.Fragment>
       <input type="submit" name={this.props.fieldDetail.name}  className={this.props.fieldDetail.class}
-          value={this.props.fieldDetail.value} onChange={this.props.fieldDetail.handleChange} />
+          value={this.props.fieldDetail.value} onClick={this.props.fieldDetail.handleChange} />
     </React.Fragment>);
 
   }
@@ -43,7 +43,7 @@ class FormWrapper extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      fullname: 'sdas',
+      fullname: '',
       email:'',
       msg:''
     }
@@ -58,7 +58,7 @@ class FormWrapper extends React.Component {
     this.setState({ msg: e.target.value });
   }
   handleSubmit = () => {
-    if(this.state.fullname != '' || this.state.email != '' || this.state.msg != '' ){
+    if(this.state.fullname != '' && this.state.email != '' && this.state.msg != '' ){
       let formObj = {name:this.state.fullname,email:this.state.email,email:this.state.msg}
       this.props.submitForm(formObj);
       //this.setState({ fullname: e.target.value });
