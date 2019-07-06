@@ -1,0 +1,49 @@
+div {
+    width:100%;
+    margin: 20px 0 0 0;
+}
+
+.full-name {
+    width: 50%;
+    padding: 0 10px 0 0
+}
+
+input,  textarea {
+    width: 75%;
+}
+
+.email {
+    width: 50%;
+    padding: 0 35px 0 0
+}
+
+
+@media screen and (min-width: 316px) {
+    label {
+        width: 50%;
+        padding: 0 13px 0 0
+    }
+    .full-name {
+        width: 50%;
+        padding: 0 1px 0 0;
+    }
+    .email {
+        width: 50%;
+        padding: 0 32px 0 0
+    }
+}
+
+@media screen and (max-width: 314px) {
+    label {
+        width: 50%;
+        padding: 0 13px 0 0
+    }
+    .full-name {
+        width: 50%;
+        padding: 0 -1px 0 0;
+    }
+    .email {
+        width: 50%;
+        padding: 0 38px 0 0
+    }
+}
