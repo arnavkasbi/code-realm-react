@@ -13,7 +13,7 @@ class App extends React.Component {
   }
 
   submitForm = (obj) => {
-    let tmp = {...this.state.formlist};
+    let tmp = [...this.state.formlist];
     tmp.push(obj);
    this.setState({formlist: tmp});
   }
