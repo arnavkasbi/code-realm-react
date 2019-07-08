@@ -59,7 +59,7 @@ class FormWrapper extends React.Component {
   }
   handleSubmit = () => {
     if(this.state.fullname != '' && this.state.email != '' && this.state.msg != '' ){
-      let formObj = {name:this.state.fullname,email:this.state.email,email:this.state.msg}
+      let formObj = {name:this.state.fullname,email:this.state.email,msg:this.state.msg}
       this.props.submitForm(formObj);
       //this.setState({ fullname: e.target.value });
     } else {
